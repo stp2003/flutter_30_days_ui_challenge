@@ -4,17 +4,17 @@ import 'package:lottie/lottie.dart';
 
 final data = [
   CardPlanetData(
-    title: "observe",
-    subtitle: "The night sky has much to offer to those who seek its mystery.",
+    title: "Heal",
+    subtitle: "If you make yourself more than just a man.",
     image: const AssetImage("assets/images/img-1.png"),
-    backgroundColor: const Color.fromRGBO(0, 10, 56, 1),
+    backgroundColor: const Color.fromRGBO(44, 7, 109, 1.0),
     titleColor: Colors.pink,
     subtitleColor: Colors.white,
     background: LottieBuilder.asset("assets/animation/bg-1.json"),
   ),
   CardPlanetData(
-    title: "imagine",
-    subtitle: "An endless number of galaxies means endless possibilities.",
+    title: "Overcome",
+    subtitle: "If you devote yourself to an ideal, and if they can't stop you",
     image: const AssetImage("assets/images/img-2.png"),
     backgroundColor: Colors.white,
     titleColor: Colors.purple,
@@ -22,10 +22,10 @@ final data = [
     background: LottieBuilder.asset("assets/animation/bg-2.json"),
   ),
   CardPlanetData(
-    title: "stargaze",
-    subtitle: "The sky dome is a beautiful graveyard of stars.",
+    title: "Rise",
+    subtitle: "Then you become something else entirely. 'A Legend'.",
     image: const AssetImage("assets/images/img-3.png"),
-    backgroundColor: const Color.fromRGBO(71, 59, 117, 1),
+    backgroundColor: const Color.fromRGBO(7, 155, 101, 1.0),
     titleColor: Colors.yellow,
     subtitleColor: Colors.white,
     background: LottieBuilder.asset("assets/animation/bg-3.json"),

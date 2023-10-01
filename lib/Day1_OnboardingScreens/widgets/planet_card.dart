@@ -59,7 +59,9 @@ class CardPlanet extends StatelessWidget {
                 data.subtitle,
                 style: TextStyle(
                   color: data.subtitleColor,
-                  fontSize: 16.0,
+                  fontSize: 19.0,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 0.5,
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 2,
