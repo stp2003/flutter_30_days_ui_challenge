@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_30_days_ui_challenge/Day1_OnboardingScreens/screens/home_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day1_OnboardingScreens/screens/day_1_onboarding_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   //??
   final List routes = [
-    const Day1HomeScreen(),
+    Day1OnboardingScreen(),
   ];
 
   @override
