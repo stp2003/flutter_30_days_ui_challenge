@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/components/footer.dart';
+import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/components/header.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/components/page_title_bar.dart';
-import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/components/upside.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/utils/constants.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_button.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_icon.dart';
@@ -32,7 +32,7 @@ class _Day2LoginScreenState extends State<Day2LoginScreen> {
           child: SingleChildScrollView(
             child: Stack(
               children: [
-                const Upside(
+                const Header(
                   imgUrl: "assets/images/login.png",
                 ),
                 const PageTitleBar(title: 'Login to your account'),
