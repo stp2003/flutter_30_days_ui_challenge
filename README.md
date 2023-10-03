@@ -7,3 +7,8 @@
 
 
 * # Day 2 - Login Screen
+```This is a Login Screen```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day2_LoginScreen/output/loginScreen.gif)
+
+
