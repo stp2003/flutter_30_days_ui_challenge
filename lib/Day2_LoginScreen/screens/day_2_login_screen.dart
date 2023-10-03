@@ -7,6 +7,7 @@ import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_bu
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_icon.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_input_fields.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/widgets/rounded_password_field.dart';
+import 'package:flutter_30_days_ui_challenge/Day3_SignUpScreen/screens/day_3_signup_screen.dart';
 
 class Day2LoginScreen extends StatefulWidget {
   const Day2LoginScreen({super.key});
@@ -16,7 +17,7 @@ class Day2LoginScreen extends StatefulWidget {
 }
 
 class _Day2LoginScreenState extends State<Day2LoginScreen> {
-  //** for switch list tile ->
+  //*** for switch list tile ->
   bool _lights = false;
 
   @override
@@ -79,13 +80,13 @@ class _Day2LoginScreenState extends State<Day2LoginScreen> {
                                 title: "Don't have an account?",
                                 navigatorText: "Register here",
                                 onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //     builder: (context) =>
-                                  //         const SignUpScreen(),
-                                  //   ),
-                                  // );
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const Day3SignUpScreen(),
+                                    ),
+                                  );
                                 },
                               ),
                               const SizedBox(height: 20),
@@ -114,7 +115,7 @@ class _Day2LoginScreenState extends State<Day2LoginScreen> {
     );
   }
 
-  //??
+  //?? for remember me toggler ->
   switchListTile() {
     return Padding(
       padding: const EdgeInsets.only(left: 50, right: 40),
@@ -140,7 +141,7 @@ class _Day2LoginScreenState extends State<Day2LoginScreen> {
   }
 }
 
-//??
+//?? for login with socials ->
 iconButton(BuildContext context) {
   return const Row(
     mainAxisAlignment: MainAxisAlignment.center,
