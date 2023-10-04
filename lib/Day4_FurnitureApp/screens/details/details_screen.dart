@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/models/product_info.dart';
+import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/details/widgets/add_to_cart.dart';
+import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/details/widgets/list_of_color_dots.dart';
+import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/details/widgets/product_image.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/utils/constants.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'components/add_to_cart.dart';
-import 'components/list_of_color_dots.dart';
-import 'components/product_image.dart';
 
 class DetailsScreen extends StatelessWidget {
   final ProductInfo product;

@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/components/search_box.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/models/product_info.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/details/details_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/products/widgets/category_list.dart';
+import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/products/widgets/product_card.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/utils/constants.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'components/category_list.dart';
-import 'components/product_card.dart';
 
 class Day4ProductScreen extends StatelessWidget {
   const Day4ProductScreen({super.key});
