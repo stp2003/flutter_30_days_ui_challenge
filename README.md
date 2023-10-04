@@ -12,3 +12,8 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day2_LoginScreen/output/loginScreen.gif)
 
 
+* # Day 3 - Sign-Up Screen
+```This is a Sign-Up Screen```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day3_SignUpScreen/output/signupScreen.gif)
+
