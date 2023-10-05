@@ -3,6 +3,7 @@ import 'package:flutter_30_days_ui_challenge/Day1_OnboardingScreens/screens/day_
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/screens/day_2_login_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day3_SignUpScreen/screens/day_3_signup_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/products/day_4_home_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day5_PlantApp/screens/home/day_5_home_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -42,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Day2LoginScreen(),
     const Day3SignUpScreen(),
     const Day4ProductScreen(),
+    const Day5HomeScreen(),
   ];
 
   @override
