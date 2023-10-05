@@ -17,3 +17,9 @@
   
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day3_SignUpScreen/output/signupScreen.gif)
 
+
+
+* # Day 3 - Furniture App UI
+```This is a Furniture App UI```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day4_FurnitureApp/output/furniture_app.gif)
