@@ -5,14 +5,15 @@ class ProductInfo {
   final int price, size, id;
   final Color color;
 
-  ProductInfo(
-      {required this.image,
-      required this.title,
-      required this.description,
-      required this.price,
-      required this.size,
-      required this.id,
-      required this.color});
+  ProductInfo({
+    required this.image,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.size,
+    required this.id,
+    required this.color,
+  });
 }
 
 List<ProductInfo> products = [
