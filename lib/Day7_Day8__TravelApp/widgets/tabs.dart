@@ -40,6 +40,19 @@ class _TabsState extends State<Tabs> {
                 border: Border.all(
                   color: selectedIndex == index ? Colors.white : Colors.black26,
                 ),
+                boxShadow: [
+                  selectedIndex == index
+                      ? const BoxShadow(
+                          color: Colors.black38,
+                          offset: Offset(-2, 0),
+                          blurRadius: 20,
+                        )
+                      : const BoxShadow(
+                          color: Colors.transparent,
+                          offset: Offset(2, 0),
+                          blurRadius: 5,
+                        ),
+                ],
               ),
               child: Center(
                 child: Column(
