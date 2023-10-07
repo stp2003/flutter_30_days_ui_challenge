@@ -32,4 +32,11 @@
 
 
 
+* # Day 6 - Shop App UI
+```This is a Shop App UI```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day6_ShopApp/output/shop_app.gif)
+
+
+
 
