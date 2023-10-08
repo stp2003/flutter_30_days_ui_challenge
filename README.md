@@ -39,4 +39,14 @@
 
 
 
+* # Day 7 and 8 - Travel App UI
+```This is a Travel App UI```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day7_Day8__TravelApp/output/travel_app.gif)
+
+
+
+
+
+
 
