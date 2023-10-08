@@ -69,3 +69,10 @@ final List<String> hotHotelLink = [
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC5xALlkGkL_PCxUyVt7x_kDTmgzuPP1Kgag&usqp=CAU',
   'https://imgcap.capturetheatlas.com/wp-content/uploads/2019/08/best-villas-in-Bali.jpg',
 ];
+
+final List<String> offerDetails = [
+  '2 Bed',
+  'Dinner',
+  'Hot Tub',
+  '1 Ac',
+];
