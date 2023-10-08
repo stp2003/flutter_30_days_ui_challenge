@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/widgets/hot_deal_list.dart';
-import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/widgets/popular_hotel_list.dart';
-import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/widgets/tabs.dart';
+import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/widgets/hot_deal_list.dart';
+import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/widgets/popular_hotel_list.dart';
+import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/widgets/tabs.dart';
 
-import '../widgets/header.dart';
+import '../../screens/home/widgets/header.dart';
+import '../detail/day_8_detail_screen.dart';
 
 class Day7HomeScreen extends StatefulWidget {
   const Day7HomeScreen({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _Day7HomeScreenState extends State<Day7HomeScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: [
+            children: <Widget>[
               const Header(),
               const SizedBox(height: 30.0),
               const Tabs(),
@@ -68,7 +69,14 @@ class _Day7HomeScreenState extends State<Day7HomeScreen> {
               ),
               const SizedBox(height: 15.0),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Day8DetailScreen(),
+                    ),
+                  );
+                },
                 child: const HotDealList(),
               ),
             ],
