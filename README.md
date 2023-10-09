@@ -45,7 +45,10 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day7_Day8__TravelApp/output/travel_app.gif)
 
 
-
+* # Day 9 - Grocery App UI
+```This is a Grocery App UI```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day9_GroceryApp/output/grocery_app.gif)
 
 
 
