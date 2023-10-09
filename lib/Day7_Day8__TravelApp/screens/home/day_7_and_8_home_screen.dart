@@ -7,14 +7,14 @@ import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/w
 import '../../screens/home/widgets/header.dart';
 import '../detail/day_8_detail_screen.dart';
 
-class Day7HomeScreen extends StatefulWidget {
-  const Day7HomeScreen({Key? key}) : super(key: key);
+class Day7and8HomeScreen extends StatefulWidget {
+  const Day7and8HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<Day7HomeScreen> createState() => _Day7HomeScreenState();
+  State<Day7and8HomeScreen> createState() => _Day7and8HomeScreenState();
 }
 
-class _Day7HomeScreenState extends State<Day7HomeScreen> {
+class _Day7and8HomeScreenState extends State<Day7and8HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -5,7 +5,8 @@ import 'package:flutter_30_days_ui_challenge/Day3_SignUpScreen/screens/day_3_sig
 import 'package:flutter_30_days_ui_challenge/Day4_FurnitureApp/screens/products/day_4_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day5_PlantApp/screens/home/day_5_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day6_ShopApp/screens/home/day_6_home_screen.dart';
-import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/day_7_home_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day7_Day8__TravelApp/screens/home/day_7_and_8_home_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day9_GroceryApp/screens/day_9_intro_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,7 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
     const Day4ProductScreen(),
     const Day5HomeScreen(),
     const Day6HomeScreen(),
-    const Day7HomeScreen(),
+    const Day7and8HomeScreen(),
+    const Day9IntroScreen(),
   ];
 
   @override
