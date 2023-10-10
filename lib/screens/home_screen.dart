@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_30_days_ui_challenge/Day10_StopWatch/screens/day_10_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day1_OnboardingScreens/screens/day_1_onboarding_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/screens/day_2_login_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day3_SignUpScreen/screens/day_3_signup_screen.dart';
@@ -26,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'Day6_ShopApp',
     'Day7_Day8__TravelApp',
     'Day9_GroceryApp',
-    'Day10_TeaApp',
+    'Day10_StopWatch',
     'Day11_SmartHome',
     'Day12_Day13__HabitTracker',
     'Day14_NemomorphicMusicPlayer',
@@ -50,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Day6HomeScreen(),
     const Day7and8HomeScreen(),
     const Day9IntroScreen(),
+    const Day10HomeScreen(),
   ];
 
   @override
