@@ -51,8 +51,10 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day10_StopWatch/output/stop_watch.gif)
 
 
-
-
+* # Day 11 - Smart Home App
+```This is a Smart Home App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day11_SmartHome/output/smart_home.gif)
 
 
 
