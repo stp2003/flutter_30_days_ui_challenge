@@ -59,8 +59,8 @@ class _Day12And13HomeScreenState extends State<Day12And13HomeScreen>
                       ),
                       Image.asset(
                         "assets/images/batman.png",
-                        height: 50,
-                        width: 50,
+                        height: 40,
+                        width: 40,
                       ),
                     ],
                   ),
@@ -70,7 +70,8 @@ class _Day12And13HomeScreenState extends State<Day12And13HomeScreen>
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'poppins_bold',
+                      letterSpacing: 0.7,
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -119,7 +120,8 @@ class _Day12And13HomeScreenState extends State<Day12And13HomeScreen>
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'poppins_bold',
+                      letterSpacing: 0.7,
                     ),
                   ),
                   const SizedBox(height: 20),
