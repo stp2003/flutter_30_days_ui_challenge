@@ -59,13 +59,21 @@ class CoffeeCard extends StatelessWidget {
                           children: [
                             const Text(
                               "Cappuccino",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'poppins_medium',
+                                letterSpacing: 0.5,
+                              ),
                             ),
                             const SizedBox(height: 3),
                             Text(
                               ingredients[index],
                               style: const TextStyle(
-                                  color: Color(0xff919293), fontSize: 11),
+                                color: Color(0xff919293),
+                                fontSize: 10,
+                                fontFamily: 'poppins',
+                                letterSpacing: 0.4,
+                              ),
                             ),
                             const SizedBox(height: 5),
                             Row(
@@ -77,8 +85,9 @@ class CoffeeCard extends StatelessWidget {
                                       r'$ ',
                                       style: TextStyle(
                                         color: Color(0xffd17842),
-                                        fontWeight: FontWeight.bold,
                                         fontSize: 20,
+                                        fontFamily: 'poppins_bold',
+                                        letterSpacing: 0.5,
                                       ),
                                     ),
                                     Text(
@@ -86,7 +95,8 @@ class CoffeeCard extends StatelessWidget {
                                       style: const TextStyle(
                                         color: Colors.white,
                                         fontSize: 20,
-                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'poppins_bold',
+                                        letterSpacing: 0.5,
                                       ),
                                     ),
                                   ],
@@ -103,7 +113,7 @@ class CoffeeCard extends StatelessWidget {
                                     color: Colors.white,
                                     size: 20,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           ],
