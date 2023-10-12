@@ -63,6 +63,8 @@ class SpecialCoffeeCard extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 16,
                           color: Colors.white,
+                          fontFamily: 'poppins_bold',
+                          letterSpacing: 0.5,
                         ),
                       ),
                       const SizedBox(height: 6),
@@ -71,6 +73,8 @@ class SpecialCoffeeCard extends StatelessWidget {
                         style: const TextStyle(
                           color: Color(0xff919293),
                           fontSize: 12,
+                          fontFamily: 'poppins',
+                          letterSpacing: 0.5,
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -92,7 +96,8 @@ class SpecialCoffeeCard extends StatelessWidget {
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
-                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'poppins_bold',
+                                  letterSpacing: 0.5,
                                 ),
                               ),
                             ],
