@@ -57,5 +57,8 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day11_SmartHome/output/smart_home.gif)
 
 
-
+* # Day 12 and 13 - Coffee App
+```This is a Coffee App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day12_Day13__CoffeeApp/output/coffee_app.gif)
 
