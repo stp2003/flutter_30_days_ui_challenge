@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_30_days_ui_challenge/Day12_Day13__CoffeeApp/screens/day_12_and_13_detail_screen.dart';
 
 class CoffeeCard extends StatelessWidget {
   final List<String> images = [
@@ -23,7 +24,14 @@ class CoffeeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const Day12And13DetailScreen(),
+            ),
+          );
+        },
         child: ListView.builder(
           shrinkWrap: true,
           scrollDirection: Axis.horizontal,
