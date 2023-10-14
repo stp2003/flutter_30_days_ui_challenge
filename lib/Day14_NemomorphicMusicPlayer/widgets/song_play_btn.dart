@@ -2,18 +2,25 @@ import 'package:flutter/material.dart';
 
 import 'neumorphic_box.dart';
 
-class SongPlayBtn extends StatelessWidget {
+class SongPlayBtn extends StatefulWidget {
   const SongPlayBtn({
     super.key,
   });
 
   @override
+  State<SongPlayBtn> createState() => _SongPlayBtnState();
+}
+
+class _SongPlayBtnState extends State<SongPlayBtn> {
+  bool isPlaying = false;
+
+  @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       height: 80.0,
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             child: NeumorphicBox(
               child: Icon(
                 Icons.skip_previous,
@@ -24,16 +31,28 @@ class SongPlayBtn extends StatelessWidget {
           Expanded(
             flex: 2,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: NeumorphicBox(
-                child: Icon(
-                  Icons.play_arrow,
-                  size: 41.0,
+                child: InkWell(
+                  onTap: () {
+                    setState(() {
+                      isPlaying = !isPlaying;
+                    });
+                  },
+                  child: isPlaying
+                      ? const Icon(
+                          Icons.play_arrow,
+                          size: 41.0,
+                        )
+                      : const Icon(
+                          Icons.pause,
+                          size: 41.0,
+                        ),
                 ),
               ),
             ),
           ),
-          Expanded(
+          const Expanded(
             child: NeumorphicBox(
               child: Icon(
                 Icons.skip_next,
