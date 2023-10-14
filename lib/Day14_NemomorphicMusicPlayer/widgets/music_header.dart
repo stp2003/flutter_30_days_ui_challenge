@@ -9,17 +9,24 @@ class MusicHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         SizedBox(
           height: 60.0,
           width: 60.0,
           child: NeumorphicBox(
-            child: Icon(Icons.arrow_back),
+            child: InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: const Icon(
+                Icons.arrow_back,
+              ),
+            ),
           ),
         ),
-        Text(
+        const Text(
           'P L A Y L I S T',
           style: TextStyle(
             fontFamily: 'poppins_bold',
@@ -27,7 +34,7 @@ class MusicHeader extends StatelessWidget {
             letterSpacing: 0.6,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 60.0,
           width: 60.0,
           child: NeumorphicBox(
