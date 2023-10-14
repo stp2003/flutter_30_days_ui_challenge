@@ -62,3 +62,16 @@
   
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day12_Day13__CoffeeApp/output/coffee_app.gif)
 
+
+
+* # Day 14 - Neumorphic Music Player App
+```This is a Neumorphic Music Player App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day14_NemomorphicMusicPlayer/output/neumorphic_music_app.gif)
+
+
+
+
+
+
+
