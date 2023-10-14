@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 
 import 'neumorphic_box.dart';
 
-class SongDetails extends StatelessWidget {
+class SongDetails extends StatefulWidget {
   const SongDetails({
     super.key,
   });
+
+  @override
+  State<SongDetails> createState() => _SongDetailsState();
+}
+
+class _SongDetailsState extends State<SongDetails> {
+  bool isSelected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +23,12 @@ class SongDetails extends StatelessWidget {
             'assets/images/batman.png',
             color: Colors.black45,
           ),
-          const Padding(
-            padding: EdgeInsets.all(10.0),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -43,9 +50,16 @@ class SongDetails extends StatelessWidget {
                     ),
                   ],
                 ),
-                Icon(
-                  Icons.favorite,
-                  color: Colors.pinkAccent,
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      isSelected = !isSelected;
+                    });
+                  },
+                  child: Icon(
+                    Icons.favorite,
+                    color: isSelected ? Colors.pinkAccent : Colors.white,
+                  ),
                 ),
               ],
             ),
