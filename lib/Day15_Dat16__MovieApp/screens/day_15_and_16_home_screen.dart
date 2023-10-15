@@ -123,6 +123,20 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                     ),
                   ),
                   forYouCardsLayout(forYouImages),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      decoration: BoxDecoration(
+                        color: kSearchbarColor,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: buildPageIndicatorWidget(),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -154,6 +168,30 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
             currentPage = page;
           });
         },
+      ),
+    );
+  }
+
+  //??
+  List<Widget> buildPageIndicatorWidget() {
+    List<Widget> list = [];
+    for (int i = 0; i < forYouItemList.length; i++) {
+      list.add(i == currentPage ? _indicator(true) : _indicator(false));
+    }
+    return list;
+  }
+
+  Widget _indicator(bool isActive) {
+    return AnimatedContainer(
+      duration: const Duration(
+        milliseconds: 150,
+      ),
+      margin: const EdgeInsets.symmetric(horizontal: 5.0),
+      height: 8.0,
+      width: 8.0,
+      decoration: BoxDecoration(
+        color: isActive ? Colors.white : Colors.white30,
+        borderRadius: BorderRadius.circular(20.0),
       ),
     );
   }
