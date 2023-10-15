@@ -3,6 +3,7 @@ import 'package:flutter_30_days_ui_challenge/Day10_StopWatch/screens/day_10_home
 import 'package:flutter_30_days_ui_challenge/Day11_SmartHome/screens/day_11_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day12_Day13__CoffeeApp/screens/day_12_and_13_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day14_NemomorphicMusicPlayer/screens/day_14_home_screen.dart';
+import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/screens/day_15_and_16_home_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day1_OnboardingScreens/screens/day_1_onboarding_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day2_LoginScreen/screens/day_2_login_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day3_SignUpScreen/screens/day_3_signup_screen.dart';
@@ -58,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Day11HomeScreen(),
     const Day12And13HomeScreen(),
     const Day14HomeScreen(),
+    const Day15And16HomeScreen(),
   ];
 
   @override
