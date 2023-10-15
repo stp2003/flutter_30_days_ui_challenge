@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/constants/colors.dart';
+import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/models/movies.dart';
+import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/widgets/custom_card_thumbnail.dart';
 
 class Day15And16HomeScreen extends StatefulWidget {
   const Day15And16HomeScreen({super.key});
@@ -9,6 +11,13 @@ class Day15And16HomeScreen extends StatefulWidget {
 }
 
 class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
+  //***
+  List<MovieModel> forYouItemList = List.of(forYouImages);
+  PageController pageController =
+      PageController(initialPage: 0, viewportFraction: 0.9);
+
+  int currentPage = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +29,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
@@ -98,6 +108,21 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 20.0),
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 5.0),
+                    child: Text(
+                      'For You',
+                      style: TextStyle(
+                        color: Colors.white54,
+                        fontFamily: 'poppins',
+                        fontSize: 16.0,
+                        letterSpacing: 0.8,
+                      ),
+                    ),
+                  ),
+                  forYouCardsLayout(forYouImages),
                 ],
               ),
             ),
@@ -108,6 +133,27 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
             child: Container(),
           ),
         ],
+      ),
+    );
+  }
+
+  //??
+  Widget forYouCardsLayout(List<MovieModel> movieList) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.45,
+      child: PageView.builder(
+        controller: pageController,
+        itemCount: movieList.length,
+        itemBuilder: (context, index) {
+          return CustomCardThumbnail(
+            imageAsset: movieList[index].imageAsset.toString(),
+          );
+        },
+        onPageChanged: (int page) {
+          setState(() {
+            currentPage = page;
+          });
+        },
       ),
     );
   }
