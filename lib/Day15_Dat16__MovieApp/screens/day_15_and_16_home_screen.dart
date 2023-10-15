@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/constants/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/models/movies.dart';
+import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/widgets/custom_card.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/widgets/custom_card_thumbnail.dart';
 
 class Day15And16HomeScreen extends StatefulWidget {
@@ -13,10 +14,18 @@ class Day15And16HomeScreen extends StatefulWidget {
 class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
   //***
   List<MovieModel> forYouItemList = List.of(forYouImages);
+  List<MovieModel> popularItemList = List.of(popularImages);
+
   PageController pageController =
       PageController(initialPage: 0, viewportFraction: 0.9);
 
   int currentPage = 0;
+
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -137,6 +146,38 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                       ),
                     ),
                   ),
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Popular',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 20.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                            Text(
+                              'See all',
+                              style: TextStyle(
+                                color: kButtonColor,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 16.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  movieListBuilder(popularItemList),
                 ],
               ),
             ),
@@ -158,6 +199,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
       child: PageView.builder(
         controller: pageController,
         itemCount: movieList.length,
+        physics: const ClampingScrollPhysics(),
         itemBuilder: (context, index) {
           return CustomCardThumbnail(
             imageAsset: movieList[index].imageAsset.toString(),
@@ -192,6 +234,23 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
       decoration: BoxDecoration(
         color: isActive ? Colors.white : Colors.white30,
         borderRadius: BorderRadius.circular(20.0),
+      ),
+    );
+  }
+
+  //??
+  Widget movieListBuilder(List<MovieModel> movieList) {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+      height: MediaQuery.of(context).size.height * 0.34,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: movieList.length,
+        itemBuilder: (context, index) {
+          return CustomCard(
+            movieModel: movieList[index],
+          );
+        },
       ),
     );
   }
