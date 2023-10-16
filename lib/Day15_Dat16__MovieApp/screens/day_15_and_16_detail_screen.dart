@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/constants/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/models/movies.dart';
+import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/widgets/cast_and_crew.dart';
 import 'package:readmore/readmore.dart';
 
 class Day15And16DetailScreen extends StatefulWidget {
@@ -136,6 +137,57 @@ class _Day15And16DetailScreenState extends State<Day15And16DetailScreen> {
                       ),
 
                       //?? cast and crew ->
+                      CastAndCrew(cast: popularItems[0].cast!),
+                      //??
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Trailer',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 20.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                            //??
+                            Stack(
+                              alignment: Alignment.center,
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.only(top: 20.0),
+                                  height: 180.0,
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(18.0),
+                                    image: const DecorationImage(
+                                      image: AssetImage(
+                                        'assets/images/trailer.jpeg',
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.all(9.0),
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.white38,
+                                  ),
+                                  child: Icon(
+                                    Icons.play_arrow_rounded,
+                                    color: kButtonColor.withOpacity(0.8),
+                                    size: 20.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
