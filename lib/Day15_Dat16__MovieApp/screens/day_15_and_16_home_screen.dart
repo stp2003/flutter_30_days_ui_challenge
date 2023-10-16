@@ -16,6 +16,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
   List<MovieModel> forYouItemList = List.of(forYouImages);
   List<MovieModel> popularItemList = List.of(popularImages);
   List<MovieModel> genresItemList = List.of(genresList);
+  List<MovieModel> legendaryItemList = List.of(legendaryImages);
 
   PageController pageController =
       PageController(initialPage: 0, viewportFraction: 0.9);
@@ -213,6 +214,39 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                     ),
                   ),
                   genresBuilder(genresItemList),
+                  //*** legendary movies ->
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Legendary',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 20.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                            Text(
+                              'See all',
+                              style: TextStyle(
+                                color: kButtonColor,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 16.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  movieListBuilder(legendaryItemList),
                 ],
               ),
             ),
@@ -290,6 +324,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
     );
   }
 
+  //??
   Widget genresBuilder(List<MovieModel> genresList) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 5.0),
@@ -338,4 +373,6 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
       ),
     );
   }
+
+//??
 }

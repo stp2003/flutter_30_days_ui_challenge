@@ -120,7 +120,7 @@ final legendaryImages = [
     movieRating: "9.4",
   ),
   MovieModel(
-    imageAsset: "assets/popular_image_3.jpeg",
+    imageAsset: "assets/images/popular_image_3.jpeg",
     movieName: "Narcos",
     year: "2020",
     movieRating: "8.7",
