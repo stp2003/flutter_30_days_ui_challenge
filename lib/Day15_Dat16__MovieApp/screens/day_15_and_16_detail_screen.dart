@@ -49,10 +49,10 @@ class _Day15And16DetailScreenState extends State<Day15And16DetailScreen> {
                 //??
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -102,6 +102,18 @@ class _Day15And16DetailScreenState extends State<Day15And16DetailScreen> {
                           ),
                         ],
                       ),
+                      //??
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          buildTag('Epic'),
+                          const SizedBox(width: 10.0),
+                          buildTag('Fantasy'),
+                          const SizedBox(width: 10.0),
+                          buildTag('Drama'),
+                          const SizedBox(width: 10.0),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -109,6 +121,27 @@ class _Day15And16DetailScreenState extends State<Day15And16DetailScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  //??
+  Widget buildTag(String title) {
+    return Container(
+      margin: const EdgeInsets.only(top: 20.0),
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0),
+      decoration: BoxDecoration(
+        color: kSearchbarColor,
+        borderRadius: BorderRadius.circular(18.0),
+      ),
+      child: Text(
+        title,
+        style: const TextStyle(
+          color: Colors.white38,
+          fontFamily: 'poppins_bold',
+          fontSize: 16.0,
+          letterSpacing: 0.8,
+        ),
       ),
     );
   }
