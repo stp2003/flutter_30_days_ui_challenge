@@ -70,7 +70,7 @@ class CustomCard extends StatelessWidget {
                     style: const TextStyle(
                       fontFamily: 'poppins_medium',
                       color: Colors.white54,
-                      fontSize: 16.0,
+                      fontSize: 14.0,
                       letterSpacing: 0.8,
                     ),
                   ),
@@ -78,7 +78,7 @@ class CustomCard extends StatelessWidget {
                   const Icon(
                     Icons.star,
                     color: Colors.yellow,
-                    size: 17.0,
+                    size: 15.0,
                   ),
                   const SizedBox(width: 5.0),
                 ],

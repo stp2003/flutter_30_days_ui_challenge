@@ -15,6 +15,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
   //***
   List<MovieModel> forYouItemList = List.of(forYouImages);
   List<MovieModel> popularItemList = List.of(popularImages);
+  List<MovieModel> genresItemList = List.of(genresList);
 
   PageController pageController =
       PageController(initialPage: 0, viewportFraction: 0.9);
@@ -146,6 +147,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                       ),
                     ),
                   ),
+                  //*** popular movies ->
                   const Padding(
                     padding:
                         EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
@@ -178,6 +180,39 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                     ),
                   ),
                   movieListBuilder(popularItemList),
+                  //*** genre movies ->
+                  const Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Genres',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 20.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                            Text(
+                              'See all',
+                              style: TextStyle(
+                                color: kButtonColor,
+                                fontFamily: 'poppins_bold',
+                                fontSize: 16.0,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  genresBuilder(genresItemList),
                 ],
               ),
             ),
@@ -242,13 +277,62 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
   Widget movieListBuilder(List<MovieModel> movieList) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-      height: MediaQuery.of(context).size.height * 0.34,
+      height: MediaQuery.of(context).size.height * 0.31,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: movieList.length,
         itemBuilder: (context, index) {
           return CustomCard(
             movieModel: movieList[index],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget genresBuilder(List<MovieModel> genresList) {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 5.0),
+      height: MediaQuery.of(context).size.height * 0.20,
+      child: ListView.builder(
+        itemCount: genresList.length,
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Stack(
+            children: [
+              Container(
+                margin: const EdgeInsets.only(
+                  left: 15.0,
+                  right: 15.0,
+                  top: 10.0,
+                  bottom: 30.0,
+                ),
+                width: 250.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      genresList[index].imageAsset.toString(),
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+              ),
+              Positioned(
+                bottom: 0.0,
+                left: 20.0,
+                child: Text(
+                  genresList[index].movieName.toString(),
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'poppins_bold',
+                    fontSize: 16.0,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+              ),
+            ],
           );
         },
       ),
