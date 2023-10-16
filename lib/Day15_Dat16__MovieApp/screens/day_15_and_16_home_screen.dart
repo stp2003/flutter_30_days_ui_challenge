@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/constants/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/models/movies.dart';
@@ -22,6 +24,14 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
       PageController(initialPage: 0, viewportFraction: 0.9);
 
   int currentPage = 0;
+
+  //***
+  List taskBarIcons = [
+    Icons.home,
+    Icons.compass_calibration_rounded,
+    Icons.video_collection_sharp,
+    Icons.audio_file,
+  ];
 
   @override
   void dispose() {
@@ -247,6 +257,7 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
                     ),
                   ),
                   movieListBuilder(legendaryItemList),
+                  const SizedBox(height: 30.0),
                 ],
               ),
             ),
@@ -254,7 +265,35 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
 
           //?? bottom nav bar ->
           Positioned(
-            child: Container(),
+            bottom: 2.0,
+            left: 25.0,
+            right: 25.0,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20.0),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(
+                  sigmaX: 25.0,
+                  sigmaY: 25.0,
+                ),
+                child: Container(
+                  color: kSearchbarColor.withOpacity(0.6),
+                  width: MediaQuery.of(context).size.width,
+                  height: 50.0,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ...taskBarIcons.map(
+                        (e) => Icon(
+                          e,
+                          color:
+                              e == Icons.home ? Colors.white : Colors.white54,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
@@ -373,6 +412,4 @@ class _Day15And16HomeScreenState extends State<Day15And16HomeScreen> {
       ),
     );
   }
-
-//??
 }
