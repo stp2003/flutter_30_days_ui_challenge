@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/constants/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day15_Dat16__MovieApp/models/movies.dart';
+import 'package:readmore/readmore.dart';
 
 class Day15And16DetailScreen extends StatefulWidget {
   const Day15And16DetailScreen({super.key});
@@ -114,6 +115,27 @@ class _Day15And16DetailScreenState extends State<Day15And16DetailScreen> {
                           const SizedBox(width: 10.0),
                         ],
                       ),
+                      const SizedBox(height: 10.0),
+                      //??
+                      const Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 10,
+                          horizontal: 10,
+                        ),
+                        child: ReadMoreText(
+                          "Year 10191. Summoned by the emperor to take over the stewardship of the arid, inhospitable planet Arrakis--the only source of Spice, the sacred hallucinogen--Duke Leto of the noble House Atreides and his family travel to the peril-laden exoplanet. But there, beset by indecipherable visions, the duke's gifted son, Paul Atreides, finds himself caught between two worlds as the grotesque Baron Vladimir of the brutal House Harkonnen plots revenge. Now, the road to legend leads deep into the desert. Can Paul fulfil his destiny in far-off Dune, the home of the mysterious, blue-eyed Fremen?",
+                          style: TextStyle(
+                            color: Colors.white38,
+                            fontFamily: 'poppins_medium',
+                            height: 1.5,
+                          ),
+                          colorClickableText: Colors.green,
+                          trimLines: 3,
+                          trimMode: TrimMode.Line,
+                        ),
+                      ),
+
+                      //?? cast and crew ->
                     ],
                   ),
                 ),
