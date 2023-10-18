@@ -76,6 +76,10 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day15_Dat16__MovieApp/output/movie_app.gif)
 
 
+* # Day 17 and 18 - News App
+```This is a News App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day17_Day18__NewsApp/output/news_app.gif)
 
 
 
