@@ -14,54 +14,54 @@ class PlanetsModel {
 
 List<PlanetsModel> planets = [
   PlanetsModel(
-    image: 'assets/images/mercury.png',
+    image: 'mercury.png',
     name: 'Mercury',
     size: 4879,
     distanceFromSun: 57900000,
   ),
   PlanetsModel(
-    image: 'assets/images/venus.png',
+    image: 'venus.png',
     name: 'Venus',
     size: 12104,
     distanceFromSun: 108200000,
   ),
   PlanetsModel(
-    image: 'assets/images/earth.png',
+    image: 'earth.png',
     name: 'Earth',
     size: 12756,
     distanceFromSun: 149600000,
   ),
   PlanetsModel(
-    image: 'assets/images/mars.png',
+    image: 'mars.png',
     name: 'Mars',
     size: 6805,
     distanceFromSun: 227900000,
   ),
   PlanetsModel(
-    image: 'assets/images/jupiter.png',
+    image: 'jupiter.png',
     name: 'Jupiter',
     size: 142984,
     distanceFromSun: 778300000,
   ),
   PlanetsModel(
-    image: 'assets/images/saturn.png',
+    image: 'saturn.png',
     name: 'Saturn',
     size: 120536,
     distanceFromSun: 1426720000,
   ),
   PlanetsModel(
-      image: 'assets/images/uranus.png',
+      image: 'uranus.png',
       name: 'Uranus',
       size: 51118,
       distanceFromSun: 2870970000),
   PlanetsModel(
-    image: 'assets/images/neptune.png',
+    image: 'neptune.png',
     name: 'Neptune',
     size: 49528,
     distanceFromSun: 4498250000,
   ),
   PlanetsModel(
-    image: 'assets/images/pluto.png',
+    image: 'pluto.png',
     name: 'Pluto',
     size: 2376.6,
     distanceFromSun: 5906376272,
