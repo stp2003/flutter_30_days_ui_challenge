@@ -82,4 +82,10 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day17_Day18__NewsApp/output/news_app.gif)
 
 
+* # Day 19 and 20 - Planet App
+```This is a Planet App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day19_Day20__PlanetApp/output/planet_app_.gif)
+
+
 
