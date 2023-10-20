@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day19_Day20__PlanetApp/constants/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day19_Day20__PlanetApp/models/planets.dart';
+import 'package:flutter_30_days_ui_challenge/Day19_Day20__PlanetApp/screens/day_19_and_20_detail_screen.dart';
 
 import '../widgets/category_items.dart';
 import '../widgets/news_items.dart';
@@ -155,7 +156,16 @@ class _Day19And20HomeScreenState extends State<Day19And20HomeScreen> {
                           (1 - (pageOffset! - index).abs() + viewPortFraction),
                         );
                         return GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Day19And20DetailScreen(
+                                  planet: planets[index],
+                                ),
+                              ),
+                            );
+                          },
                           child: PlanetItem(
                             planet: planets[index],
                             size: size,
