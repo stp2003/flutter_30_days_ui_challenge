@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_30_days_ui_challenge/Day21_Day22__YogaApp/screens/day_21_and_22_detail_screen.dart';
 import 'package:flutter_30_days_ui_challenge/Day21_Day22__YogaApp/utils/colors.dart';
 import 'package:flutter_30_days_ui_challenge/Day21_Day22__YogaApp/widgets/bottom_nav_bar.dart';
 import 'package:flutter_30_days_ui_challenge/Day21_Day22__YogaApp/widgets/category_card.dart';
@@ -64,22 +65,58 @@ class Day21And22HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Diet",
                           svgSrc: "assets/icons/Hamburger.svg",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const Day21And22DetailScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Kegel Exercises",
                           svgSrc: "assets/icons/Excrecises.svg",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const Day21And22DetailScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Meditation",
                           svgSrc: "assets/icons/Meditation.svg",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const Day21And22DetailScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Yoga",
                           svgSrc: "assets/icons/yoga.svg",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return const Day21And22DetailScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                       ],
                     ),
