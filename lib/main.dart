@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_30_days_ui_challenge/screens/home_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft])
-      .then((_) {
-    runApp(const MyApp());
-  });
 
-  // runApp(const MyApp());
+  //?? only if want to see the parallax effect ->
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft])
+  //     .then((_) {
+  //   runApp(const MyApp());
+  // });
+
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
