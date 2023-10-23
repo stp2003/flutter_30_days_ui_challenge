@@ -61,8 +61,7 @@ final popularImages = [
         "imageUrl": "assets/images/actor_1.png",
         "date": "June 14, 2022",
         "rating": "5.0",
-        "comment":
-            "Great movie! I will review ite more than once. Special thanks to one the operator!"
+        "comment": "Great movie! I will review ite more than once."
       },
       {
         "name": "Theresa Webb",
