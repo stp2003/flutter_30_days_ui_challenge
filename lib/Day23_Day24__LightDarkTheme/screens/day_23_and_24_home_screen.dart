@@ -90,23 +90,6 @@ class _Day23And24HomeScreenState extends State<Day23And24HomeScreen> {
                           color: Color(0xffffaf00),
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Text(
-                        "Made By",
-                        style: TextStyle(
-                          fontSize: 15,
-                          letterSpacing: 1.3,
-                          color: Color(0xffffaf00),
-                        ),
-                      ),
-                      Text(
-                        "The CS Guy",
-                        style: TextStyle(
-                          fontSize: 20,
-                          letterSpacing: 1.8,
-                          color: Color(0xffffaf00),
-                        ),
-                      ),
                       SizedBox(height: 50),
                     ],
                   ),
