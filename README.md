@@ -88,4 +88,11 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day19_Day20__PlanetApp/output/planet_app_.gif)
 
 
+* # Day 21 and 22 - Yoga App
+```This is a Yoga App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day21_Day22__YogaApp/output/yoga_app.gif)
+
+
+
 
