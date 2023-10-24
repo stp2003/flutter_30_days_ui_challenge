@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_30_days_ui_challenge/Day23_Day24__LightDarkTheme/components/parallax_widget.dart';
+import 'package:flutter_30_days_ui_challenge/Day23_Day24__ParallaxEffect/components/parallax_widget.dart';
 
 class Day23And24HomeScreen extends StatefulWidget {
   const Day23And24HomeScreen({super.key});
