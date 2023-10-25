@@ -24,7 +24,7 @@ class _Day25And26HomeScreenState extends State<Day25And26HomeScreen> {
 
   //??
   final List<Widget> _children = [
-    const Home(),
+    Home(),
     const Search(),
     const Reels(),
     const Shop(),
