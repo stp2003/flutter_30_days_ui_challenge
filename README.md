@@ -94,5 +94,11 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day21_Day22__YogaApp/output/yoga_app.gif)
 
 
+* # Day 23 and 24 - Parallax Effect
+```This is a Parallax Effect```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day23_Day24__ParallaxEffect/output/parallax_effect.gif)
+
+
 
 
