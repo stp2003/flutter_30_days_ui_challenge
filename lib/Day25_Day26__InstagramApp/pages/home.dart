@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_challenge/Day25_Day26__InstagramApp/utils/bubble_stories.dart';
+import 'package:flutter_30_days_ui_challenge/Day25_Day26__InstagramApp/utils/users_post.dart';
 
 class Home extends StatelessWidget {
   Home({super.key});
@@ -47,6 +48,17 @@ class Home extends StatelessWidget {
               itemBuilder: (context, index) {
                 return BubbleStories(
                   text: people[index],
+                );
+              },
+            ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: people.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: UserPosts(name: people[index]),
                 );
               },
             ),
