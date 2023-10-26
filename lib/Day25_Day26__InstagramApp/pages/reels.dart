@@ -5,6 +5,6 @@ class Reels extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Hello'));
+    return const Center(child: Text('Reels'));
   }
 }
