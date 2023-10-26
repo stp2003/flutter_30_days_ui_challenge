@@ -26,12 +26,12 @@ class Home extends StatelessWidget {
             Row(
               children: [
                 Icon(
-                  Icons.favorite,
+                  Icons.favorite_outline,
                   color: Colors.pink,
                 ),
                 Padding(
                   padding: EdgeInsets.all(24.0),
-                  child: Icon(Icons.share),
+                  child: Icon(Icons.messenger_outline_outlined),
                 ),
               ],
             ),
