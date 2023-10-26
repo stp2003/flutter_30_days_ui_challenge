@@ -100,5 +100,9 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day23_Day24__ParallaxEffect/output/parallax_effect.gif)
 
 
+* # Day 25 and 26 - Instagram UI
+```This is a Instagram UI```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day25_Day26__InstagramApp/output/insta_app.gif)
 
 
