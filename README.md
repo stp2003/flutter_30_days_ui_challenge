@@ -106,3 +106,12 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day25_Day26__InstagramApp/output/insta_app.gif)
 
 
+* # Day 27 and 28 - Marvel App
+```This is a Marvel App```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day27_Day28__MarvelApp/output/marvel_app.gif)
+
+
+
+
+
