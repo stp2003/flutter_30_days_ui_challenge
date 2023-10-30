@@ -112,6 +112,9 @@
   ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day27_Day28__MarvelApp/output/marvel_app.gif)
 
 
-
+* # Day 29 and 30 - Batman App
+```This is a Batman App from a dribble design```
+  
+  ![](https://github.com/stp2003/flutter_30_days_ui_challenge/blob/master/lib/Day29_Day30__BatmanApp/output/batman_app.gif)
 
 
