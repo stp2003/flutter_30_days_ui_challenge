@@ -1,7 +1,7 @@
-import 'color_constants.dart';
-import 'image_constants.dart';
+import '../constants/color_constants.dart';
+import '../constants/image_constants.dart';
 
-class HeroDetails {
+class BatmanInfo {
   static const Map batman = {
     'backgrondImage': ImageConst.batmanBackground,
     'hero': ImageConst.batman,
